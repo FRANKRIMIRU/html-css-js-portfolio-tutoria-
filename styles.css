@@ -362,7 +362,7 @@ height:90%;
 }
 
 /* CONTACT */
-#contact{
+#contacts{
   display: flex;
   justify-content: center;
   flex-direction:column ;
