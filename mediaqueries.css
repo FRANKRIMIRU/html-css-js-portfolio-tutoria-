@@ -42,10 +42,11 @@ section{
 }
 .about-containers{
   margin-top: 0;
-  flex-direction: column;
- 
-  
 
+}
+.article-container{
+  width:273px;
+  height:183px
 }
 
   }
@@ -62,6 +63,8 @@ section{
     article{
       font-size:1rem;
       margin-bottom: 2rem;
+      display:flex;
+      align-items:center;
     }
     footer nav{
       height:fit-content;
@@ -90,7 +93,7 @@ section{
 }
 .section__pic-container{
   width:auto;
-  height:46vh;
+  height:46vw;
   justify-content: center;
 }
 .section__text__p2{
