@@ -1,4 +1,5 @@
 /*general styling*/
+/*default lightmode*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 *{
@@ -87,11 +88,13 @@ flex-direction: column;
   position:absolute;
   top:100%;
   right:0;
-  background-color:white;
+  background-color: rgb(163, 163, 163);
   width: fit-content;
  max-height: 0px;
   overflow: hidden;
 transition:all 0.3s ease-in-out;
+border-radius: 1rem;
+
 
  }
  
@@ -284,7 +287,7 @@ transition:all 0.3s ease-in-out;
 
 .details-container {
   padding: 1.5rem;
-  flex: 1;
+  flex: 2;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -325,28 +328,30 @@ transition:all 0.3s ease-in-out;
 
 .article-container{
   display: flex;
-  align-items:center;
   text-align: initial;
   flex-wrap: wrap;
-  flex-direction:row;
-    gap:3.5rem;
-border-radius: 2rem;
-  justify-content:space-between;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+  border-radius: 2rem;
   box-shadow: 2px 2px 35px rgb(240, 240, 240);
+  padding-top:1rem;
+  padding-bottom:1rem;
+  width: 100%;
  
 }
 
 .article{
   display:flex;
- width:100px;
+ width:10rem;
+ padding-bottom: 1rem;
   justify-content:space-around;
   gap:0.5rem;
-  height: 100px
-  
+
 }
 
 article.icon{
-  cursor:pointer
+  cursor:default;
 }
 
 /* PROJECTS */
@@ -361,7 +366,6 @@ article.icon{
 border-radius: 2rem;
 width:90%;
 height:90%;
-object-fit:cover;
 }
 
 .project-title{
@@ -422,3 +426,72 @@ margin:0 1rem;
 footer p{
   text-align: center;
 }
+
+
+
+/* DARK MODE */
+body.dark-mode {
+  background-color: #1a1a1a; /* Dark background */
+  color: #ffffff; /* White text */
+}
+
+.dark-mode p {
+  color: #bbbbbb; /* Lighter text for readability */
+}
+
+/* NAVIGATION BAR */
+.dark-mode nav {
+  background-color: #222;
+  color: white;
+}
+
+.dark-mode .nav-links a {
+  color: white;
+}
+
+.dark-mode .nav-links a:hover {
+  color: lightgray;
+}
+
+/* SECTIONS */
+.dark-mode .details-container,
+.dark-mode .color-container,
+.dark-mode .contact-info-upper-container {
+  background-color: #333;
+  border-color: #555;
+  color: white;
+}
+#hamburger-nav .menu-links #dark-mode-toggle {
+     
+     margin-left: 0.6rem;
+     margin-bottom: 1rem;
+     margin-right: 0.5rem;
+}
+
+.dark-mode .btn-color-1,
+.dark-mode .btn-color-2 {
+  border: white 0.1rem solid;
+}
+
+.dark-mode .btn-color-1,
+.dark-mode .btn-color-2:hover {
+  background: white;
+  color: black;
+}
+
+/* PROJECTS */
+.dark-mode .project-title {
+  color: white;
+}
+
+.dark-mode .project-btn {
+  color: white;
+  border-color: #888;
+}
+
+/* FOOTER */
+.dark-mode footer {
+  background-color: #222;
+  color: white;
+}
+
